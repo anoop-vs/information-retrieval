@@ -5,7 +5,8 @@ Welcome to the repository for the Information Retrieval course offered at Digita
 ## Course Overview
 
 **Course Title:** Information Retrieval  
-**Instructor:** Dr. Anoop V. S. (School of Digital Sciences)
+**Instructor:** Dr. Anoop V. S.
+
 **Semester:** August 2024 - December 2024  
 **University:** Digital University Kerala, Thiruvananthapuram, India
 
