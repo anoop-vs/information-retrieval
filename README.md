@@ -25,11 +25,11 @@ https://sites.google.com/view/anoopvs/teaching/information-retrieval
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/ir-course-digital-university-kerala.git
+   git clone https://github.com/anoop-vs/information-retrieval.git
    
 2. **Naviage to the directory:**
    ```bash
-   cd ir-course-digital-university-kerala
+   cd information-retrieval
    
 3. **Explore the files**
 
