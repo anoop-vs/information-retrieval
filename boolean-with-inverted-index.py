@@ -66,6 +66,7 @@ def boolean_retrieval(index, query):
     # Process NOT operations
     elif 'not' in tokens:
         terms = query.split(' not ')
+        result_docs = set(index.get(terms[0].strip(), set()))
         if len(terms) == 2:
             term_to_exclude = terms[1].strip()
             result_docs = result_docs.difference(index.get(term_to_exclude, set()))
@@ -93,8 +94,10 @@ queries = [
 for query in queries:
     print(f"Query: '{query}'")
     results = boolean_retrieval(inverted_index, query)
-    print("Results:", results)
-    print("Documents:")
-    for doc_id in results:
-        print(f"  {doc_id}: {documents[doc_id]}")
-    print()
+    if len(results) != 0:
+        print("Results:", results)
+        print("Documents:")
+        for doc_id in results:
+            print(f"  {doc_id}: {documents[doc_id]}")
+        print()
+    else : print("No results found\n")
